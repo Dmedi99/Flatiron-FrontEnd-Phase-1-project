@@ -5,7 +5,7 @@ const API = 'https://boardgamegeek.com/xmlapi2/hot?boardgame';
 const boardGamesListElement = document.getElementById('boardGamesList');
 const searchForm = document.getElementById('searchForm');
 const searchNameInput = document.getElementById('searchName');
-
+const wishlistElement = document.getElementById('wishlist')
 
 //function that fetches the data from the API and catches error if any 
 function fetchBoardGames() {
