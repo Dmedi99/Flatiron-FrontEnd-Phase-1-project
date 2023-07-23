@@ -26,6 +26,19 @@ function fetchBoardGames() {
         });
 }
 
+//function that obtains the clicked games contents and places them in a list to then display in wishlist ul
+function handleGameClick(event) {
+    const gameInfo = event.target.innerText;
+    const [name, yearPublished] = gameInfo.split(' (');
+    const cleanedYearPublished = yearPublished.slice(0, -1); 
+
+    const wishlistItem = document.createElement('li');
+    wishlistItem.innerText = `${name} (${cleanedYearPublished})`;
+
+    wishlistElement.appendChild(wishlistItem);
+}
+
+
 //Function that displays the data from the fetch onto the DOM
 function displayBoardGames(games) {
     boardGamesListElement.innerHTML = '';
