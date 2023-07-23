@@ -68,3 +68,8 @@ function handleSearch(event) {
 
 //Eventlistner that is runs the handleSearch function when the form is submitted
 searchForm.addEventListener('submit', handleSearch);
+
+//Calls the fetchBoardGames function to display the information from the API to the DOM
+fetchBoardGames().then((games) => {
+    displayBoardGames(games);
+});
