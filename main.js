@@ -60,6 +60,7 @@ function displayBoardGames(games) {
         listItem.innerText = 'No hot board games found.';
         boardGamesListElement.appendChild(listItem);
     }
+    addGameClickListeners(); //This function is added here so the event listener is added after the data is displayed in the DOM 
 }
 
 //Function that takes the array of the 'games' and 'searchTerm as inputs and returns a new array containing the matching search criteria 
