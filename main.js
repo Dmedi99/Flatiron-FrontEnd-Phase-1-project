@@ -38,6 +38,13 @@ function handleGameClick(event) {
     wishlistElement.appendChild(wishlistItem);
 }
 
+// Function that adds a click event listener to each game item in the board games list
+function addGameClickListeners() {
+    const gameItems = boardGamesListElement.getElementsByTagName('li');
+    Array.from(gameItems).forEach((item) => {
+        item.addEventListener('click', handleGameClick);
+    });
+}
 
 //Function that displays the data from the fetch onto the DOM
 function displayBoardGames(games) {
