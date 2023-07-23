@@ -47,4 +47,24 @@ function filterBoardGames(games, searchTerm) {
     return games.filter((game) => game.name.toLowerCase().includes(searchTerm.toLowerCase()));
 }
 
+// Event Handler for the search form submission. Prevents Default. It gets the input put in the search form
+// it then calls the fetchBoardGames function to get the list of games in the API then the filterBoardGames
+// function to filter the games based on the search input. Finally it calls displayBoardGames with the filtered list of the games
 
+function handleSearch(event) {
+    event.preventDefault();
+    const searchTerm = searchNameInput.value.trim();
+
+
+    fetchBoardGames()
+        .then((games) => {
+            const filteredGames = filterBoardGames(games, searchTerm);
+            displayBoardGames(filteredGames);
+        })
+        .catch((error) => {
+            console.error('Error fetching board games:', error);
+        });
+}
+
+//Eventlistner that is runs the handleSearch function when the form is submitted
+searchForm.addEventListener('submit', handleSearch);
