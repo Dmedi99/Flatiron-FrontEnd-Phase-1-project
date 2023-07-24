@@ -1,9 +1,9 @@
 body{
     background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* styles.css */
-/* styles.css */
+
 #wishlist {
     position: fixed;
     top: 80px;
@@ -12,4 +12,29 @@ body{
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #f9f9f9;
+}
+#wishlist {
+    list-style: none;
+    padding: 0
+}
+
+#boardGamesList{
+    list-style: none;
+    padding: 0
+}
+
+#boardGamesList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    font-size: 16px;
+}
+
+
+#boardGamesList li span {
+    margin-right: 10px;
 }
