@@ -2,16 +2,15 @@
 
 ## Requirments 
 
-- hmtl css and js 
-- public API or db.json 
-- 2 distinct event listeners 
-- iterating through arrays 
-- need to use array methods
-- single page only 
-- render DATA in the HTML DOM 
-- array, 5 objects, 4 key value pairs 
+-[x] hmtl css and js 
+-[x] public API or db.json 
+-[x] 2 distinct event listeners 
+-[x]iterating through arrays 
+-[x] need to use array methods
+-[x] single page only 
+-[x] render DATA in the HTML DOM 
+
 
 ### extras 
 - make mobile friendly 
-- use db.json file 
-- 
+- use own db.json file 
