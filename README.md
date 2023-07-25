@@ -22,7 +22,7 @@ This is a project submission for the Flatiron phase 1 FrontEnd Development cours
 
 ### API
 
-The website fetches data from the [BoardGameGeek API](https://boardgamegeek.com/xmlapi2/hot?boardgame) to obtain the list of hottest board games.
+The website fetches data from the db.json file in the directory. It was made using the data provided in the [BoardGameGeek API](https://boardgamegeek.com/xmlapi2/hot?boardgame). 
 
 ### Contributions
 
