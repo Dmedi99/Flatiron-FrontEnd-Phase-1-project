@@ -1,0 +1,40 @@
+{
+    "boardGames": [
+      {
+        "name": "Ticket to Ride",
+        "players": "2-5",
+        "playtime": "30-60 minutes",
+        "publisher": "Days of Wonder",
+        "rating": 7.5
+      },
+      {
+        "name": "Catan",
+        "players": "3-4",
+        "playtime": "60-90 minutes",
+        "publisher": "Catan Studio",
+        "rating": 7.2
+      },
+      {
+        "name": "Pandemic",
+        "players": "2-4",
+        "playtime": "45 minutes",
+        "publisher": "Z-Man Games",
+        "rating": 8.0
+      },
+      {
+        "name": "Codenames",
+        "players": "2-8",
+        "playtime": "15 minutes",
+        "publisher": "Czech Games Edition",
+        "rating": 7.8
+      },
+      {
+        "name": "7 Wonders",
+        "players": "3-7",
+        "playtime": "30 minutes",
+        "publisher": "Repos Production",
+        "rating": 7.7
+      }
+    ]
+  }
+  
