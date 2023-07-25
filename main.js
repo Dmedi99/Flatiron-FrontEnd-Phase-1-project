@@ -20,15 +20,12 @@ function fetchBoardGames() {
 
 //function that obtains the clicked games contents and places them in a list to then display in wishlist ul
 function handleGameClick(event) {
-    const gameInfo = event.target.innerText;
-    const [name, yearPublished] = gameInfo.split(' (');
-    const cleanedYearPublished = yearPublished.slice(0, -1); 
-
+    const gameName = event.target.innerText; 
+  
     const wishlistItem = document.createElement('li');
-    wishlistItem.innerText = `${name} (${cleanedYearPublished})`;
-
+    wishlistItem.innerText = gameName;
     wishlistElement.appendChild(wishlistItem);
-}
+  }
 
 // Function that adds a click event listener to each game item in the board games list
 function addGameClickListeners() {
@@ -39,25 +36,25 @@ function addGameClickListeners() {
 }
 
 function displayBoardGames(games) {
-    boardGamesListElement.innerHTML = '';
-    if (games && games.length > 0) {
-      games.forEach((game) => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `
-          <strong>${game.name}</strong> (${game.players} players)<br>
-          Playtime: ${game.playtime}<br>
-          Publisher: ${game.publisher}<br>
-          Rating: ${game.rating}
-        `;
-        boardGamesListElement.appendChild(listItem);
-      });
-    } else {
+  boardGamesListElement.innerHTML = '';
+  if (games && games.length > 0) {
+    games.forEach((game) => {
       const listItem = document.createElement('li');
-      listItem.innerText = 'No board games found.';
+      listItem.innerHTML = `
+        <strong>${game.name}</strong> (${game.players} players)<br>
+        Playtime: ${game.playtime}<br>
+        Publisher: ${game.publisher}<br>
+        Rating: ${game.rating}
+      `;
       boardGamesListElement.appendChild(listItem);
-    }
-    addGameClickListeners(); // This function is added here so the event listener is added after the data is displayed in the DOM
+    });
+  } else {
+    const listItem = document.createElement('li');
+    listItem.innerText = 'No board games found.';
+    boardGamesListElement.appendChild(listItem);
   }
+  addGameClickListeners(); // This function is added here so the event listener is added after the data is displayed in the DOM
+}
 
 //Function that takes the array of the 'games' and 'searchTerm as inputs and returns a new array containing the matching search criteria 
 function filterBoardGames(games, searchTerm) {
