@@ -13,10 +13,12 @@ body{
     padding: 10px;
     background-color: #f9f9f9;
 }
-#wishlist {
-    list-style: none;
-    padding: 0
-}
+
+#wishlist li {
+    font-size: 16px;
+    color: #007bff;
+    margin-bottom: 8px;
+  }
 
 #boardGamesList{
     list-style: none;
@@ -28,12 +30,14 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    margin-bottom: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
     font-size: 16px;
-}
-
+    background-color: white; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 500px;
+  }
 
 #boardGamesList li span {
     margin-right: 10px;
