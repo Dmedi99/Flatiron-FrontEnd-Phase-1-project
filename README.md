@@ -4,7 +4,7 @@ This is a simple web application that displays a list of the hottest board games
 
 ## How It Works
 
-1. **Displaying Board Games**: Upon loading the website, the hottest board games are fetched from the BoardGameGeek API and displayed in a list format. Each item in the list includes the name of the game and the year it was published.
+1. **Displaying Board Games**: Upon loading the website, the hottest board games are fetched from the db.json file and displayed in a list format. Each item in the list includes the name of the game, playtime, publisher and the rating.
 
 2. **Searching for Games**: Users can use the search form to find specific board games by name. When a search term is entered, the application fetches the games from the API and filters the list based on the search criteria. The filtered results are then displayed.
 
